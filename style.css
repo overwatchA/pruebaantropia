@@ -1,0 +1,397 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+  font-weight: 600;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+/*----------------Seccion Omorfia------------------*/
+
+.sectionOmorfia{
+  width: 100%;
+  background-color: #88C546;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+
+.omorfiaContent{
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 0rem 5rem ;
+}
+
+
+/*Header*/
+.hero_header img{
+  width: 150px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0  !important;
+  font-weight: 0 !important;
+  line-height: 1.2 !important;
+  color: var(--bs-heading-color);
+  font-size: none !important;
+}
+
+h5, h5 {
+  font-size: 1rem !important;
+}
+
+
+
+.omorfia{
+  --bs-gutter-x: 0 !important;
+  height: 100%;
+  width: 100%;
+
+}
+
+.portada{
+  box-shadow: 10px 10px 80px rgb(204, 204, 204);
+}
+
+.sectionOmorfiaText{
+  width: 60%;
+}
+.sectionOmorfiaText h5 {
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  word-spacing:.4rem;
+}
+
+
+.sectionOmorfiaImg{
+  height: 100;
+  padding-right: 0 !important;
+}
+
+.sectionOmorfiaImg img{
+  width: 350px;
+}
+
+.nav-link:hover{
+  color: black;
+  transition: color 0.3s ease;
+}
+
+
+
+/*----------------Seccion Comic------------------*/
+
+.sectionComic{
+  max-width: 1400px;
+  padding: 0rem 5rem ;
+  margin: 5rem 0rem 10rem 0rem!important;
+}
+
+h2{
+  color: #334D21;
+}
+
+h4{
+  color: #88C546;
+}
+
+.sectionComic a{
+  background-color: #88C546;
+}
+
+.sectionComic a:hover{
+  background-color: #7cb440;
+  color: white;
+}
+
+
+/*----------------Seccion Personaje------------------*/
+
+.SectionPersonajesPrincipal{
+  max-width: 1400px;
+  padding: 0rem 5rem ;
+  margin: 5rem 0rem 10rem 0rem!important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SectionPersonajes1{
+  flex-direction: column;
+  position: relative;
+  background-image:url(./img/escenario1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 75vh;
+  padding: 4rem;
+  padding-bottom: 3rem;
+}
+
+.imgPersonaje img{
+  position: absolute;
+  height: 90%;
+  right: 80px;
+  bottom: 0px;;
+  z-index: 1;
+}
+
+.personajesContent{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.infoSeccionPersonajes{
+  background-color: rgba(255, 255, 255, 0.938);
+  width: 45%;
+}
+
+.titlePersonaje{
+  color: #32491a ;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.luis, .ana, .sofia, .gomez{
+  background-color: rgba(0, 0, 0, 0.256);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.personajesFila p{
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.709);
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.animacionPersonaje{
+  animation: personaje .2s ;
+}
+
+@keyframes personaje{
+  0%{
+      transform: translatex(1000px);
+  }
+  100%{
+      transform: translatex(0px);  
+  }
+}
+
+/*----------------Seccion aboutUs------------------*/
+
+.sobreNosotros{
+  max-width: 1400px;
+  padding: 0 5rem ;
+  margin: auto auto 5rem auto;
+}
+
+.sobreNosotros img{
+  width: 250px;
+  height: 250px;
+  border: solid 5px white;
+
+}
+
+
+/*-------------------Footer----------------------*/
+
+.sectionFooter{
+  background-color: #E8E8E8;
+}
+
+.footer{
+  max-width: 1400px;
+  background-color: #E8E8E8;
+  padding: 0 5rem 1rem 0;
+}
+
+.footer img{
+  width: 150px;
+}
+
+.div-logo{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 0px){
+  .omorfiaContent, .sectionComic, .SectionPersonajesPrincipal, .sobreNosotros, .footer{
+  padding: 0 1.5rem ;
+}
+.sectionOmorfiaText {
+  width: 80%;
+}
+.sectionOmorfiaImg img {
+  width: 250px;
+}
+.sobreNosotros img {
+  width: 175px;
+}
+.sectionOmorfia{
+  height: auto;
+}
+.omorfiaContent{
+  padding: 0;
+}
+}
+
+.centrar{
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 576px){
+
+  .titlePersonaje{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px){
+  .omorfiaContent, .sectionComic, .SectionPersonajesPrincipal, .sobreNosotros, .footer{
+    padding: 0 3rem ;
+  }
+}
+
+@media screen and (max-width: 673px){
+  .imgPersonaje img{
+    position: absolute;
+    top: 0.05rem;
+    right: -0.5rem;
+    width: 127%;
+    height: auto;
+}
+}
+
+@media screen and (max-width: 768px){
+  #parrafo{
+    display: none !important;
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+  .infoSeccionPersonajes{
+    width: 300px;
+  }
+  .omorfia{
+    margin-top: 50px;
+  }
+  .menu-navegacion{
+    background-color: #7fb841;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .omorfiaContent, .sectionComic, .SectionPersonajesPrincipal, .sobreNosotros, .footer{
+  padding: 0 5rem ;
+}
+.sectionOmorfiaText {
+  width: 60%;
+}
+.sectionOmorfiaImg img {
+  width: 350px;
+}
+.sobreNosotros img {
+  width: 250px;
+}
+.centrar{
+  justify-content: left;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+  .hero_header{
+  max-width: 100%;
+}
+} 
+
+
+
+@media screen and (min-width: 0px){
+  .imgPersonaje img{
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .imgPersonaje img{
+    right: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.navbar, .omorfiaContent .navbar-brand{
+  padding: 0!important;
+}
+
+.bg-body-tertiary {
+  background-color: #88C546 !important;
+}
+
+.row{
+  --bs-gutter-x: 0rem !important;
+  flex-shrink: none !important;
+}
+
+.navbar-toggler {
+  background-color: #7fb841;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0
+}
+
+
+
+
+
+
+.sectionOmorfia, .sectionComic, .sectionFooter{
+  overflow-y: hidden;
+}
+
+
+
